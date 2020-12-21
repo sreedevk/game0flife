@@ -1,20 +1,9 @@
 # Game0fLife
 
-```
-
-                                       a8888a  .8888b dP oo .8888b          
-                                      d8' ..8b 88   " 88    88   "          
-.d8888b. .d8888b. 88d8b.d8b. .d8888b. 88 .P 88 88aaa  88 dP 88aaa  .d8888b. 
-88'  `88 88'  `88 88'`88'`88 88ooood8 88 d' 88 88     88 88 88     88ooood8 
-88.  .88 88.  .88 88  88  88 88.  ... Y8'' .8P 88     88 88 88     88.  ... 
-`8888P88 `88888P8 dP  dP  dP `88888P'  Y8888P  dP     dP dP dP     `88888P' 
-     .88                                                                    
- d8888P                                                                     
-
-
-```
+Conway's Game of Life Implemented using Ruby & SDL2
 
 ![game0flife](https://media4.giphy.com/media/xWeibSaH00G4Y3Zw2U/giphy.gif)
+![game0flife](https://media0.giphy.com/media/UXdkXlX0tK889p7Ffi/giphy.gif)
 
  Usage:
    game0flife [options]
