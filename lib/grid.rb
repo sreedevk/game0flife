@@ -2,6 +2,7 @@
 
 require_relative 'cell.rb'
 require_relative 'display.rb'
+require_relative 'seed.rb'
 
 # Universe
 class Grid
@@ -14,6 +15,14 @@ class Grid
 
   def initialize
     @grid_struct = create_grid_struct(true)
+  end
+
+  def load_pattern(pattern, x, y)
+    @grid_struct = Seed.render_to_grid(@grid_struct, pattern, x, y)
+  end
+
+  def reset
+    @grid_struct = create_grid_struct(false)
   end
 
   def create_grid_struct(randomize = false)
