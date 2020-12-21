@@ -13,7 +13,7 @@ require_relative './lib/display.rb'
 
 # main application class
 class GameOfLife
-  DEF_FRAMERATE = 40
+  DEF_FRAMERATE = 60
   DEF_PATTERN_X = 20
   DEF_PATTERN_Y = 20
 
@@ -44,8 +44,8 @@ class GameOfLife
   private
 
   def parse_arg(arg_type)
-    ARGV.map  { |arg| arg.split('0') }
-        .find { |arg| arg[0] == arg_type }
+    ARGV.map  { |arg| arg.split('=') }
+        .find { |arg| arg[0] == "--#{arg_type}" }
         .to_a[1]
   end
 end
